@@ -18,6 +18,8 @@ export class ReviewsComponent implements OnInit {
     this.reviews = this.restaurantService.reviewsOfRestaurant(
       this.route.parent.snapshot.params['id']
     );
+
+    console.table(this.reviews);
   }
 
 }
